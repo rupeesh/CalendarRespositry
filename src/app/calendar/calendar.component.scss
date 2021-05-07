@@ -1,0 +1,188 @@
+/***Start of the css for table calendar *******/
+
+.calendar-table-wrapper {
+    padding: 40px 40px;
+    .calendar-select-dropdown {
+        border: 2px solid #dde8f1;
+        padding-right: 20px;
+        border-radius: 5px;
+        .mat-form-field-label {
+            //margin-top: -5px;
+            background: #fff;
+            width: 75px;
+            padding: 0 8px;
+        }
+        .mat-form-field-wrapper {
+            border-bottom: 0px;
+            padding-bottom: 0px;
+            padding-top: 12px;
+        }
+        .mat-form-field-flex {
+            background-color: #fff;
+            padding: 0;
+            border-radius: 0px;
+            .mat-form-field-infix {
+                width: 250px;
+                padding: 0px;
+                border-top: 0px;
+                .calendar-selection {
+                    font-size: 14px;
+                    color: #262626;
+                }
+                .mat-form-field-label-wrapper {
+                    top: -18px;
+                    font-size: 12px;
+                    font-style: italic;
+                }
+            }
+        }
+        .mat-form-field-underline {
+            display: none;
+        }
+    }
+    .left-calendar-listing {
+        width: 80%;
+        .calendar-listing-table {
+            width: 100%;
+            background: #f4f6f8;
+            border-spacing: 0px;
+            height: 100%;
+            border-collapse: collapse;
+            .month-span,
+            .day-span {
+                font-size: 12px;
+                color: #00172b;
+                font-weight: 700;
+            }
+            .weekend-text {
+                font-size: 12px;
+                color: #85929d;
+                font-weight: 600;
+                padding-left: 12px;
+            }
+            .day-span {
+                padding-left: 5px;
+            }
+            .month-span {
+                display: none;
+            }
+        }
+        th.active {
+            border-bottom: 2px solid #1997d2;
+            & .month-span {
+                display: inline-block;
+            }
+        }
+        thead tr th {
+            border-bottom: 2px solid #e1e3e6;
+            padding: 10px 0px;
+            background: #fff;
+            border: 0px;
+        }
+        tbody tr td {
+            width: 14%;
+            background: #f4f6f8;
+            padding: 0 10px;
+            vertical-align: top;
+            height: 100%;
+            border: 0px;
+            .task-boxes {
+                background: #fff;
+                margin: 15px 0;
+                padding: 10px;
+                box-shadow: 0px 1px 1px rgba($color: #000000, $alpha: 0.16), 0px 2px 1px -1px rgba($color: #000000, $alpha: 0.12), 0px 2px 1px rgba($color: #000000, $alpha: 0.2);
+                .task-id {
+                    font-size: 12px;
+                    color: #0073a8;
+                    text-decoration: none;
+                    padding-bottom: 5px;
+                    border-bottom: 2px solid #e1e3e6;
+                    display: block;
+                    font-weight: 600;
+                }
+                .task-details {
+                    font-size: 10px;
+                    color: #262626;
+                    line-height: 14px;
+                    text-transform: uppercase;
+                    margin: 8px 0;
+                }
+                .task-timing {
+                    font-size: 11px;
+                    color: #999da1;
+                    margin-top: 8px;
+                }
+                &.vacation-wrap {
+                    background: #ebedf0;
+                    height: 94%;
+                    .vacation-head {
+                        color: #262626;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        margin-bottom: 0px;
+                    }
+                    .vacation-text {
+                        font-size: 11px;
+                        color: #999da1;
+                        text-transform: uppercase;
+                        padding-top: 5px;
+                        margin: 0px;
+                    }
+                }
+                &.red-border {
+                    border-left: 2px solid #d11f31;
+                }
+            }
+        }
+    }
+    .right-reminder-listing {
+        width: 20%;
+        .reminder-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: rgba($color: #262626, $alpha: 0.87);
+            margin-top: 10px;
+        }
+        .individual-inner-reminder {
+            background: #fff;
+            box-shadow: 0px 1px 6px rgba(38, 38, 38, 0.24);
+            padding: 10px;
+            margin-bottom: 15px;
+            .left-reminder {
+                width: 60px;
+                border-right: 1px solid #e5e5e5;
+                padding-left: 5px;
+                .reminder-month {
+                    margin: 0px;
+                    font-size: 12px;
+                    color: #262626;
+                }
+                .reminder-day {
+                    margin: 0px;
+                    font-size: 20px;
+                    color: #262626;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+            }
+            .right-reminder {
+                width: calc(100% - 60px);
+                padding-left: 10px;
+                .reminder-description {
+                    margin: 0px;
+                    font-size: 18px;
+                    color: #262626;
+                    font-weight: 600;
+                }
+                .reminder-timing {
+                    margin: 0px;
+                    font-size: 11px;
+                    color: rgba(38, 38, 38, 0.24);
+                }
+            }
+            &.borderblue-left {
+                border-left: 3px solid #005468;
+            }
+        }
+    }
+}

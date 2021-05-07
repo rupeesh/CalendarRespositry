@@ -1,0 +1,258 @@
+<div class="flex-container calendar-table-wrapper">
+    <div class="calendar-table-innerwrap">
+        <div class="calendar-top-wrapper" fxLayout="row" fxLayoutAlign="space-between start">
+            <div class="calendar-select-dropdown" fxLayout="row">
+
+                <mat-datepicker-toggle matSuffix fxFlexAlign="end"></mat-datepicker-toggle>
+
+
+                <mat-form-field appearance="standard" class="calendar-selectbox">
+                    <mat-label class="calendar-label">Work week</mat-label>
+                    <select matNativeControl class="calendar-selection" (change)="onChange($event)">
+                      <option value="" selected>04/12/2020 - 04/18/2020 WW2015</option>
+                      <option [value]="options" *ngFor = "let options of calendarSelect">{{options}}</option>
+                     
+
+                      </select>
+                </mat-form-field>
+            </div>
+
+            <div class="calendar-add-leave">
+                <a href="javascript:void(0)">Add Leave +</a>
+            </div>
+        </div>
+
+        <div class="calendar-bottom-wrapper" fxLayout="row" fxLayoutAlign="space-between start" fxLayoutGap="30px">
+            <div class="left-calendar-listing">
+                <table class="table calendar-listing-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="month-span">Apr</span>
+                                <span class="day-span">12</span>
+                                <span class="weekend-text">Sunday</span>
+                            </th>
+                            <th>
+                                <span class="month-span">Apr</span>
+                                <span class="day-span">13</span>
+                                <span class="weekend-text">Monday</span>
+                            </th>
+                            <th>
+                                <span class="month-span">Apr</span>
+                                <span class="day-span">14</span>
+                                <span class="weekend-text">Tuesday</span>
+                            </th>
+                            <th class="active">
+                                <span class="month-span">Apr</span>
+                                <span class="day-span">15</span>
+                                <span class="weekend-text">Wednesday</span>
+                            </th>
+                            <th>
+                                <span class="month-span">Apr</span>
+                                <span class="day-span">16</span>
+                                <span class="weekend-text">Thursday</span>
+                            </th>
+
+                            <th>
+                                <span class="month-span">Apr</span>
+                                <span class="day-span">17</span>
+                                <span class="weekend-text">Friday</span>
+                            </th>
+                            <th>
+                                <span class="month-span">Apr</span>
+                                <span class="day-span">18</span>
+                                <span class="weekend-text">Saturday</span>
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="task-boxes">
+                                    <a href="javascript:void(0)" class="task-id">
+                                       40658497 - 01     
+                                    </a>
+                                    <h6 class="task-details">
+                                        UC CCW PP 2A: INSTALL / REMOVE GROUND 4K SWGR 2A3-6
+                                    </h6>
+                                    <p class="task-timing">07:00 - 08:00</p>
+                                </div>
+
+
+                            </td>
+                            <td>
+                                <div class="task-boxes">
+                                    <a href="javascript:void(0)" class="task-id">
+                                       40658497 - 01     
+                                    </a>
+                                    <h6 class="task-details">
+                                        UC CCW PP 2A: INSTALL / REMOVE GROUND 4K SWGR 2A3-6
+                                    </h6>
+                                    <p class="task-timing">07:00 - 08:00</p>
+                                </div>
+                                <div class="task-boxes">
+                                    <a href="javascript:void(0)" class="task-id">
+                                       40658497 - 01     
+                                    </a>
+                                    <h6 class="task-details">
+                                        UC CCW PP 2A: INSTALL / REMOVE GROUND 4K SWGR 2A3-6
+                                    </h6>
+                                    <p class="task-timing">07:00 - 08:00</p>
+                                </div>
+
+                            </td>
+
+                            <td>
+                                <div class="task-boxes">
+                                    <a href="javascript:void(0)" class="task-id">
+                                       40658497 - 01     
+                                    </a>
+                                    <h6 class="task-details">
+                                        UC CCW PP 2A: INSTALL / REMOVE GROUND 4K SWGR 2A3-6
+                                    </h6>
+                                    <p class="task-timing">07:00 - 08:00</p>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="task-boxes">
+                                    <a href="javascript:void(0)" class="task-id">
+                                       40658497 - 01     
+                                    </a>
+                                    <h6 class="task-details">
+                                        UC CCW PP 2A: INSTALL / REMOVE GROUND 4K SWGR 2A3-6
+                                    </h6>
+                                    <p class="task-timing">07:00 - 08:00</p>
+                                </div>
+                                <div class="task-boxes red-border">
+                                    <a href="javascript:void(0)" class="task-id">
+                                       40658497 - 01     
+                                    </a>
+                                    <h6 class="task-details ">
+                                        UC CCW PP 2A: INSTALL / REMOVE GROUND 4K SWGR 2A3-6
+                                    </h6>
+                                    <p class="task-timing">07:00 - 08:00</p>
+                                </div>
+
+                                <div class="task-boxes red-border">
+                                    <a href="javascript:void(0)" class="task-id">
+                                       40658497 - 01     
+                                    </a>
+                                    <h6 class="task-details">
+                                        UC CCW PP 2A: INSTALL / REMOVE GROUND 4K SWGR 2A3-6
+                                    </h6>
+                                    <p class="task-timing">07:00 - 08:00</p>
+                                </div>
+
+
+                                <div class="task-boxes red-border">
+                                    <a href="javascript:void(0)" class="task-id">
+                                       40658497 - 01     
+                                    </a>
+                                    <h6 class="task-details">
+                                        UC CCW PP 2A: INSTALL / REMOVE GROUND 4K SWGR 2A3-6
+                                    </h6>
+                                    <p class="task-timing">07:00 - 08:00</p>
+                                </div>
+
+
+                            </td>
+                            <td>
+                                <div class="task-boxes vacation-wrap">
+                                    <h4 class="vacation-head">
+                                        Vacation
+                                    </h4>
+                                    <p class="vacation-text">
+                                        All day
+                                    </p>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="task-boxes">
+                                    <a href="javascript:void(0)" class="task-id">
+                                       40658497 - 01     
+                                    </a>
+                                    <h6 class="task-details">
+                                        UC CCW PP 2A: INSTALL / REMOVE GROUND 4K SWGR 2A3-6
+                                    </h6>
+                                    <p class="task-timing">07:00 - 08:00</p>
+                                </div>
+
+                                <div class="task-boxes">
+                                    <a href="javascript:void(0)" class="task-id">
+                                       40658497 - 01     
+                                    </a>
+                                    <h6 class="task-details">
+                                        UC CCW PP 2A: INSTALL / REMOVE GROUND 4K SWGR 2A3-6
+                                    </h6>
+                                    <p class="task-timing">07:00 - 08:00</p>
+                                </div>
+
+                            </td>
+
+                            <td>
+                                <div class="task-boxes">
+                                    <a href="javascript:void(0)" class="task-id">
+                                       40658497 - 01     
+                                    </a>
+                                    <h6 class="task-details">
+                                        UC CCW PP 2A: INSTALL / REMOVE GROUND 4K SWGR 2A3-6
+                                    </h6>
+                                    <p class="task-timing">07:00 - 08:00</p>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="right-reminder-listing">
+                <h3 class="reminder-title">Reminders</h3>
+                <div class="reminder-boxes-wrap">
+                    <div class="individual-reminder-box">
+                        <div class="individual-inner-reminder borderblue-left" fxLayout="row" fxLayoutAlign="space-between start">
+                            <div class="left-reminder">
+                                <p class="reminder-month">April</p>
+                                <p class="reminder-day">17</p>
+                            </div>
+                            <div class="right-reminder">
+                                <p class="reminder-description">Vacation</p>
+                                <p class="reminder-timing">07:00AM - 03:00PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="individual-reminder-box">
+                        <div class="individual-inner-reminder borderblue-left" fxLayout="row" fxLayoutAlign="space-between start">
+                            <div class="left-reminder">
+                                <p class="reminder-month">April</p>
+                                <p class="reminder-day">30</p>
+                            </div>
+                            <div class="right-reminder">
+                                <p class="reminder-description">Not Available</p>
+                                <p class="reminder-timing">08:00AM - 03:00PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="individual-reminder-box">
+                        <div class="individual-inner-reminder borderblue-left" fxLayout="row" fxLayoutAlign="space-between start">
+                            <div class="left-reminder">
+                                <p class="reminder-month">May</p>
+                                <p class="reminder-day">20</p>
+                            </div>
+                            <div class="right-reminder">
+                                <p class="reminder-description">Training</p>
+                                <p class="reminder-timing">08:00AM - 12:00PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
